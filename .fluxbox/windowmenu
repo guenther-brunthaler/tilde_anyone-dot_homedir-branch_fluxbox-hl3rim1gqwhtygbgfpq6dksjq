@@ -1,0 +1,34 @@
+[begin]
+[encoding UTF-8]
+  [shade]
+    [stick]
+    [maximize]
+    [iconify]
+    [raise]
+    [lower]
+    [submenu] (Fenster anordnen)
+      [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (Als linke Bildschirmhälfte anordnen)
+      [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (Als rechte Bildschirmhälfte anordnen)
+      [separator]
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft}] (Als linkes oberes Bildschirmviertel anordnen)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight}] (Als rechtes oberes Bildschirmviertel anordnen)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft}] (Als linkes unteres Bildschirmviertel anordnen)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomRight}] (Als rechtes unteres Bildschirmviertel anordnen)
+      [separator]
+      [Resize -50% -50%] (Fenstergröße halbieren)
+    [end]
+    [sendto]
+    [layer]
+    [alpha]
+    [extramenus]
+    [submenu] (Fensteroperationen)
+      [ToggleDecor] (Fensterdekoration ein/aus)
+      [settitledialog]
+      [StartMoving] (Fenster verschieben)
+      [StartResizing] (Größe ändern (Kante\)) NearestEdge
+      [Kill] (Brutal abwürgen)
+    [end]
+    [separator]
+    [close]
+  [endencoding]
+[end]
