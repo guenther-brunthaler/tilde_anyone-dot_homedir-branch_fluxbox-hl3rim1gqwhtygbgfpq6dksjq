@@ -20,7 +20,7 @@
       [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 BottomLeft}] (Unten)
     [end]
     [separator]
-    [Resize -50% -50%] (Fenstergröße halbieren)
+    [Resize -50% -50%] (Größe halbieren)
   [end]
   [separator]
   [maximize]
