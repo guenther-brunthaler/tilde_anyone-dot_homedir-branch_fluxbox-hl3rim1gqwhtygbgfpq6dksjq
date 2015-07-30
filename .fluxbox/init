@@ -9,6 +9,7 @@ session.forcePseudoTransparency:	false
 session.ignoreBorder:	false
 session.keyFile:	~/.fluxbox/keys
 session.menuFile:	~/.fluxbox/my-menu
+session.menuSearch:	itemstart
 session.screen0.allowRemoteActions:	false
 session.screen0.autoRaise:	true
 session.screen0.clickRaises:	true
