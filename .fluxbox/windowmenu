@@ -2,7 +2,19 @@
 [encoding UTF-8]
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (Als linke Bildschirmhälfte)
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (Als rechte Bildschirmhälfte)
-  [submenu] (Als andere Anordnung...)
+  [submenu] (Andere Anordnung...)
+    [MoveTo 0 * Left] (Links)
+    [MoveTo 0 * Right] (Rechts)
+    [submenu] (Andere Position)
+      [MoveTo * 0 Top] (Oben)
+      [MoveTo * 0 Bottom] (Unten)
+      [separator]
+      [MoveTo 0 0 TopLeft] (Links oben)
+      [MoveTo 0 0 TopRight] (Rechts oben)
+      [MoveTo 0 0 BottomLeft] (Links unten)
+      [MoveTo 0 0 BottomRight] (Rechts unten)
+    [end]
+    [separator]
     [submenu] (Viertel)
       [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft}] (Links oben)
       [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight}] (Rechts oben)
