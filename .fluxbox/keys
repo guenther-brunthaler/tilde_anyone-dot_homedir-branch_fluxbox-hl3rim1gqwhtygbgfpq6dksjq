@@ -36,7 +36,8 @@ OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
 OnTitlebar Move1  :StartMoving
 
 # middle click on the titlebar to lower
-OnTitlebar Mouse2 :Lower
+#OnTitlebar Mouse2 :Lower
+OnTitlebar Mouse2 :RootMenu
 
 # right click on the titlebar for a menu of options
 OnTitlebar Mouse3 :WindowMenu
