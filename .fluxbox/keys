@@ -28,8 +28,7 @@ OnWindow Mod1 Mouse2 :Lower
 OnTitlebar Control Mouse1 :StartTabbing
 #OnTitlebar Control Mouse3 :StartTabbing
 
-# double click on the titlebar to shade
-OnTitlebar Double Mouse1 :Shade
+OnTitlebar Double Mouse1 :Minimize
 
 # left click on the titlebar to move the window
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
@@ -83,12 +82,12 @@ Control Mod1 Right :NextWorkspace
 Control Mod1 q :Exec qalculate-gtk
 Control Mod1 g :Exec galculator
 Control Mod1 p :Exec jpilot
-Control Mod1 w :Exec firefox
+Control Mod1 w :Exec dillo
 Control Mod1 m :Exec thunderbird --mail
 Control Mod1 n :Exec thunderbird --compose
 Control Mod1 e :Exec leafpad
 Control Mod1 f :Exec pcmanfm
-Control Mod1 l :Exec gnome-search-tool
+#Control Mod1 l :Exec mate-search-tool
 Shift Print :Exec screenshot-takeit
 Print :Exec screenshot-takeit --current
 Control Mod1 t :Exec lxtask

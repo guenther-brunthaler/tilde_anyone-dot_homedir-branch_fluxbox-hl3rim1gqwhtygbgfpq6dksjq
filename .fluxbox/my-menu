@@ -9,10 +9,6 @@
       [submenu] (Fluxbox)
         [exec] (Run) {fbrun} 
         [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center} 
-        [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg} </usr/share/icons/hicolor/64x64/apps/kontact-import-wizard.png>
-        [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png} </usr/share/icons/hicolor/64x64/apps/kontact-import-wizard.png>
-        [separator] 
-        [exec] (Lock screen) {xscreensaver-command -lock} 
         [separator] 
         [reconfig] (Reload config) 
         [restart] (Restart) 
