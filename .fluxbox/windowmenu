@@ -2,6 +2,8 @@
 [encoding UTF-8]
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (Als linke Bildschirmhälfte)
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (Als rechte Bildschirmhälfte)
+  [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 TopLeft}] (Als obere Bildschirmhälfte)
+  [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (Als untere Bildschirmhälfte)
   [submenu] (Andere Anordnung...)
     [MoveTo 0 * Left] (Links)
     [MoveTo 0 * Right] (Rechts)
