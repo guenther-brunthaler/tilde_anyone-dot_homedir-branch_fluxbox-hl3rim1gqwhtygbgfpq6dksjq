@@ -5,7 +5,8 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/user/gb/.Xmodmap"
+xmodmap ~/.Xmodmap
+xrdb ~/.Xresources
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -15,13 +16,13 @@ xmodmap "/home/user/gb/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 #xv -quit -smooth -root -max /usr/share/slim/themes/parallel-dimensions/background.jpg
-xscreensaver <& - >& - 2>& - &
-fbautostart > /dev/null && fbautostart
-fbpanel -p toolbar > /dev/null 2>& 1 &
+#xscreensaver <& - >& - 2>& - &
+#fbautostart > /dev/null && fbautostart
+#fbpanel -p toolbar > /dev/null 2>& 1 &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
 exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "/home/user/gb/.fluxbox/log"
+# exec fluxbox -log "/home/gb/.fluxbox/log"

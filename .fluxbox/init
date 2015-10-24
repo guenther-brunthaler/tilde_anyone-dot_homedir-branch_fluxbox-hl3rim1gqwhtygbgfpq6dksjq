@@ -20,6 +20,7 @@ session.screen0.demandsAttentionTimeout:	500
 session.screen0.edgeSnapThreshold:	10
 session.screen0.focusModel:	ClickFocus
 session.screen0.focusNewWindows:	true
+session.screen0.focusSameHead:	false
 session.screen0.fullMaximization:	false
 session.screen0.iconbar.alignment:	Left
 session.screen0.iconbar.iconTextPadding:	10
@@ -63,7 +64,7 @@ session.screen0.toolbar.visible:	true
 session.screen0.toolbar.widthPercent:	100
 session.screen0.tooltipDelay:	500
 session.screen0.window.focus.alpha:	255
-session.screen0.windowMenu:	/home/user/gb/.fluxbox/windowmenu
+session.screen0.windowMenu:	/home/gb/.fluxbox/windowmenu
 session.screen0.windowPlacement:	RowMinOverlapPlacement
 session.screen0.window.unfocus.alpha:	255
 session.screen0.workspaceNames:	Main,Alt,BKU,N900 Comm,

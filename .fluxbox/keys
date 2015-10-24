@@ -26,7 +26,7 @@ OnWindow Mod1 Mouse2 :Lower
 
 # control-click a window's titlebar and drag to attach windows
 OnTitlebar Control Mouse1 :StartTabbing
-OnTitlebar Control Mouse3 :StartTabbing
+#OnTitlebar Control Mouse3 :StartTabbing
 
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Shade
@@ -57,9 +57,9 @@ Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+176 :Exec amixer sset PCM,0 1+
+174 :Exec amixer sset PCM,0 1-
+160 :Exec amixer sset PCM,0 toggle
 
 # current window commands
 Mod1 F4 :Close
