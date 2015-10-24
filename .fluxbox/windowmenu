@@ -2,8 +2,6 @@
 [encoding UTF-8]
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (Als linke Bildschirmhälfte)
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (Als rechte Bildschirmhälfte)
-  [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 TopLeft}] (Als obere Bildschirmhälfte)
-  [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (Als untere Bildschirmhälfte)
   [submenu] (Andere Anordnung...)
     [MoveTo 0 * Left] (Links)
     [MoveTo 0 * Right] (Rechts)
@@ -32,6 +30,10 @@
       [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 TopLeft}] (Oben)
       [MacroCmd {ResizeTo 100% 34%} {MoveTo 0 33% TopLeft}] (Mitte)
       [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 BottomLeft}] (Unten)
+    [end]
+    [submenu] (Hälfte der Höhe)
+      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 TopLeft}] (Oben)
+      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (Unten)
     [end]
     [separator]
     [Resize -50% -50%] (Größe halbieren)
