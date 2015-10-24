@@ -4,6 +4,8 @@
    [submenu] (Start)
       [include] (~/.fluxbox/menu)
       [separator]
+      [exec] (Browse All) {pcmanfm menu://applications} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
+      [separator]
       [submenu] (Fluxbox)
         [exec] (Run) {fbrun} 
         [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center} 
