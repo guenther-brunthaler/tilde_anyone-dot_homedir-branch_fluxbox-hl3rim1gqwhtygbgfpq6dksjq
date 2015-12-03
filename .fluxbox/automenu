@@ -1,0 +1,4 @@
+[include] (/var/cache/xdg-menu/fluxbox/boxrc)
+[exec] ((aktualisieren\)) {fluxbox-generate_menu -ds -is -t xterm -b dillo}
+[separator]
+[exec] (Browse Apps) {pcmanfm menu://applications} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
