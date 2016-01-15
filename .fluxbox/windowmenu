@@ -1,42 +1,53 @@
 [begin]
 [encoding UTF-8]
-  [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (Als linke Bildschirmhälfte)
-  [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (Als rechte Bildschirmhälfte)
+  [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (1/2 @ ←)
+  [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (1/2 @ →)
   [submenu] (Andere Anordnung...)
-    [MoveTo 0 * Left] (Links)
-    [MoveTo 0 * Right] (Rechts)
-    [submenu] (Andere Position)
-      [MoveTo * 0 Top] (Oben)
-      [MoveTo * 0 Bottom] (Unten)
-      [separator]
-      [MoveTo 0 0 TopLeft] (Links oben)
-      [MoveTo 0 0 TopRight] (Rechts oben)
-      [MoveTo 0 0 BottomLeft] (Links unten)
-      [MoveTo 0 0 BottomRight] (Rechts unten)
+    [MoveTo 0 * Left] (←)
+    [MoveTo 0 * Right] (→)
+    [MoveTo 0 0 BottomLeft] (↙)
+    [submenu] (...)
+      [MoveTo * 0 Top] (↑)
+      [MoveTo * 0 Bottom] (↓)
+      [MoveTo 0 0 TopLeft] (↖)
+      [MoveTo 0 0 TopRight] (↗)
+      [MoveTo 0 0 BottomRight] (↘)
     [end]
     [separator]
-    [submenu] (Viertel)
-      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft}] (Links oben)
-      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight}] (Rechts oben)
-      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft}] (Links unten)
-      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomRight}] (Rechts unten)
+    [submenu] (↔ ...)
+      [ResizeTo 25% *] (1/4)
+      [ResizeTo 33% *] (1/3)
+      [ResizeTo 50% *] (1/2)
+      [ResizeTo 66% *] (2/3)
     [end]
-    [submenu] (Drittel der Breite)
-      [MacroCmd {ResizeTo 33% 100%} {MoveTo 0 0 TopLeft}] (Links)
-      [MacroCmd {ResizeTo 34% 100%} {MoveTo 33% 0 TopLeft}] (Mitte)
-      [MacroCmd {ResizeTo 33% 100%} {MoveTo 0 0 TopRight}] (Rechts)
-    [end]
-    [submenu] (Drittel der Höhe)
-      [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 TopLeft}] (Oben)
-      [MacroCmd {ResizeTo 100% 34%} {MoveTo 0 33% TopLeft}] (Mitte)
-      [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 BottomLeft}] (Unten)
-    [end]
-    [submenu] (Hälfte der Höhe)
-      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 TopLeft}] (Oben)
-      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (Unten)
+    [submenu] (↕ ...)
+      [ResizeTo * 25%] (1/2)
+      [ResizeTo * 33%] (1/3)
+      [ResizeTo * 50%] (1/2)
+      [ResizeTo * 66%] (2/3)
     [end]
     [separator]
-    [Resize -50% -50%] (Größe halbieren)
+    [submenu] (1/4 @ ...)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft}] (↖)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight}] (↗)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft}] (↙)
+      [MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomRight}] (↘)
+    [end]
+    [submenu] (1/3 @ ...)
+      [MacroCmd {ResizeTo 33% 100%} {MoveTo 0 0 TopLeft}] (←)
+      [MacroCmd {ResizeTo 34% 100%} {MoveTo 33% 0 TopLeft}] (↔)
+      [MacroCmd {ResizeTo 33% 100%} {MoveTo 0 0 TopRight}] (→)
+      [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 TopLeft}] (↑)
+      [MacroCmd {ResizeTo 100% 34%} {MoveTo 0 33% TopLeft}] (↕)
+      [MacroCmd {ResizeTo 100% 33%} {MoveTo 0 0 BottomLeft}] (↓)
+    [end]
+    [submenu] (1/2 @ ...)
+      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 TopLeft}] (↑)
+      [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (↓)
+    [end]
+    [separator]
+    [Resize -50% -50%] (⌀ ÷ 2)
+    [Resize +100% +100%] (⌀ × 2)
   [end]
   [separator]
   [maximize]
