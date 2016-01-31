@@ -1,8 +1,10 @@
 [begin] (fluxbox)
-   [workspaces] (Workspaces)
-   [separator]
-   [submenu] (Start)
-      [include] (~/.fluxbox/automenu)
+   [include] (~/.fluxbox/automenu)
+   [submenu] (...)
+      [workspaces] (Arbeitsflächen)
+      [separator]
+      [exec] (Browse Apps) {pcmanfm menu://applications} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
+      [exec] ((Menü aktualisieren\)) {fluxbox-generate_menu -ds -is -t xterm -b dillo}
       [separator]
       [submenu] (Fluxbox)
         [exec] (Run) {fbrun}
