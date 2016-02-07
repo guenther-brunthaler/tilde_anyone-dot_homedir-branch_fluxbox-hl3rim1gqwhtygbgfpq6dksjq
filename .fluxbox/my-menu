@@ -1,30 +1,28 @@
 [begin] (fluxbox)
    [include] (~/.fluxbox/automenu)
-   [submenu] (...)
+   [submenu] (Fluxbox)
       [workspaces] (Arbeitsflächen)
       [separator]
       [exec] (Browse Apps) {pcmanfm menu://applications} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
       [exec] ((Menü aktualisieren\)) {fluxbox-generate_menu -ds -is -t xterm -b dillo}
       [separator]
-      [submenu] (Fluxbox)
-        [exec] (Run) {fbrun}
-        [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
-        [separator] 
-        [reconfig] (Reload config) 
-        [restart] (Restart) 
-        [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center} 
-        [separator] 
-        [submenu] (System Styles) {Choose a style...}
-           [stylesdir] (/usr/share/fluxbox/styles)
-        [end]
-        [submenu] (User Styles) {Choose a style...}
-           [stylesdir] (~/.fluxbox/styles)
-        [end]
-        [config] (Configuration)
-        [commanddialog] (Fluxbox Command) 
-        [separator] 
-        [exit] (Exit) 
+      [exec] (Run) {fbrun}
+      [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+      [separator]
+      [reconfig] (Reload config)
+      [restart] (Restart)
+      [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+      [separator]
+      [submenu] (System Styles) {Choose a style...}
+         [stylesdir] (/usr/share/fluxbox/styles)
       [end]
+      [submenu] (User Styles) {Choose a style...}
+         [stylesdir] (~/.fluxbox/styles)
+      [end]
+      [config] (Configuration)
+      [commanddialog] (Fluxbox Command)
+      [separator]
+      [exit] (Exit)
    [end]
    [separator]
    [include] (~/.fluxbox/quicklaunch)
