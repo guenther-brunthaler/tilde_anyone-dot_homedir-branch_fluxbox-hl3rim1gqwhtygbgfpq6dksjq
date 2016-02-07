@@ -48,8 +48,8 @@
       [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (↓)
     [end]
     [separator]
-    [Resize -50% -50%] (⌀ ÷ 2)
-    [Resize +100% +100%] (⌀ × 2)
+    [Resize -50% -50%] ((W÷2\)×(H÷2\))
+    [Resize +100% +100%] ((2×W\)×(2×H\))
   [end]
   [separator]
   [maximize]
