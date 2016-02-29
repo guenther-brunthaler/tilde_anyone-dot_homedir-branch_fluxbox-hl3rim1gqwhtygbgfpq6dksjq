@@ -80,8 +80,6 @@ Control Mod1 Right :NextWorkspace
 
 # Application shortcuts
 Control Mod1 q :Exec qalculate-gtk
-Control Mod1 g :Exec galculator
-Control Mod1 p :Exec jpilot
 Control Mod1 w :Exec dillo
 Control Mod1 m :Exec thunderbird --mail
 Control Mod1 n :Exec thunderbird --compose

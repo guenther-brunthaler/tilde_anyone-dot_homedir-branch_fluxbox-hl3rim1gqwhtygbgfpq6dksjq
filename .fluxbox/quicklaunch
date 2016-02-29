@@ -2,8 +2,6 @@
 [exec] (Krusader) {krusader} </usr/share/icons/hicolor/16x16/apps/krusader_user.png>
 [separator]
 [exec] (LeafPad) {leafpad} </usr/share/icons/hicolor/16x16/apps/leafpad.png>
-[separator]
-[exec] (Galculator) {galculator} </usr/share/icons/hicolor/16x16/apps/accessories-calculator.png>
 [exec] (Qalculate!) {qalculate-gtk} </usr/share/pixmaps/qalculate.png>
 [separator]
 [exec] (Locate files) {gnome-search-tool} </usr/share/icons/hicolor/16x16/apps/preferences-system-search.png>
@@ -24,7 +22,6 @@
 [exec] (Rectangles) {rect 135x65a} <~/.local/share/icons/rectangles-qe3e9c8kmiz6auiaky37i0j1k.png>
 [exec] (Kobo Deluxe) {kobodl} </usr/share/icons/hicolor/16x16/apps/kobodl.png>
 [exec] (XScavenger) {/usr/local/games/bin/xscavenger} <~/.local/share/icons/xscavenger-h2cjt1flsezadezt770r0mw8g.png>
-[exec] (PipeWalker) {pipewalker}
 [exec] (Light Up) {lightup 86x44b45s0d0} <~/.local/share/icons/lightup-srxjygard7fhg2lckntmlfevv.png>
 [separator]
 [exec] (Xterm) {xterm -geometry 80x42+0+13 -e /bin/bash -l} </usr/share/icons/hicolor/16x16/apps/utilities-terminal.png>
