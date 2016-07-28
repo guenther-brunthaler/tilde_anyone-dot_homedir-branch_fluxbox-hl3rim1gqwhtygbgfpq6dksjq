@@ -4,6 +4,8 @@
 #
 # Lines starting with a '#' are ignored.
 
+cd
+
 # Change your keymap:
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources

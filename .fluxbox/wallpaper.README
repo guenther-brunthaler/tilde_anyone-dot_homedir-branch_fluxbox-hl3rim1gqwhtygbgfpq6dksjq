@@ -1,0 +1,13 @@
+Copy $MYWALLPAPER.jpg to *this* directory then run
+
+$ fbsetbg -u xv -f $MYWALLPAPER.jpg
+
+From now on
+
+$ fbsetbg -l
+
+will load that same wallpaper, and fluxbox will do that when it starts.
+
+Instead of "xv", a number of other wallpaper settings tools can be used as
+well. Look into the Perl source code of "fbsetbg" to see which ones are
+supported.

@@ -24,7 +24,7 @@
 [exec] (XScavenger) {/usr/local/games/bin/xscavenger} <~/.local/share/icons/xscavenger-h2cjt1flsezadezt770r0mw8g.png>
 [exec] (Light Up) {lightup 86x44b45s0d0} <~/.local/share/icons/lightup-srxjygard7fhg2lckntmlfevv.png>
 [separator]
-[exec] (Xterm) {xterm -geometry 80x42+0+13 -e /bin/bash -l} </usr/share/icons/hicolor/16x16/apps/utilities-terminal.png>
+[exec] (Xterm) {x-terminal -e /bin/bash -l} </usr/share/icons/hicolor/16x16/apps/utilities-terminal.png>
 [exec] (Char Table) {gucharmap} </usr/share/icons/hicolor/16x16/apps/accessories-character-map.png>
 [exec] (Font Viewer) {gnome-font-viewer}
 [exec] (xkill) {xkill} <~/.local/share/icons/xkill-m74536-1-rcd00kri1xeprz3awfvhgub29.png>
