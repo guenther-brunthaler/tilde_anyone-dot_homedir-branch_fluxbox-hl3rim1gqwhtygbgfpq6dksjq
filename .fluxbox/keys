@@ -1,7 +1,7 @@
 # click on the desktop to get menus
-OnDesktop Mouse1 :WorkspaceMenu
+OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :RootMenu
-OnDesktop Mouse3 :HideMenus
+OnDesktop Mouse3 :WorkspaceMenu
 
 # scroll on the desktop to change workspaces
 OnDesktop Mouse4 :PrevWorkspace

@@ -1,1 +1,3 @@
-[include] (/var/cache/xdg-menu/fluxbox/boxrc)
+[submenu] (Start)
+   [include] (~/.fluxbox/mmaker.menu)
+[end]
