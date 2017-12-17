@@ -61,6 +61,9 @@ Mod1 F2 :Exec fbrun
 174 :Exec amixer sset PCM,0 1-
 160 :Exec amixer sset PCM,0 toggle
 
+# "Scroll Lock" toggles backlight on some keyboards
+Scroll_Lock :Exec keyboard-backlight-toggle-via-scroll_lock_led
+
 # current window commands
 Mod1 F4 :Close
 Mod1 F5 :Kill

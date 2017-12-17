@@ -4,7 +4,7 @@
       [workspaces] (Arbeitsflächen)
       [separator]
       [exec] (Browse Apps) {pcmanfm menu://applications} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
-      [exec] (Menü aktualisieren) {/usr/bin/update-menus && mmaker -ic fluxbox > ~/.fluxbox/mmaker.menu && xmessage "Menus have been updated!" || xmessage "Problem updating menus!"}
+      [exec] (Menü aktualisieren) {xdgmenumaker -f fluxbox -i -n > ~/.fluxbox/xdgmenumaker.menu && xmessage "Menus have been updated!" || xmessage "Problem updating menus!"}
       [separator]
       [exec] (Run) {fbrun}
       [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}

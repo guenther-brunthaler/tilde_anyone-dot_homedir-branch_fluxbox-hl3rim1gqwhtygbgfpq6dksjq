@@ -25,6 +25,17 @@ xrdb ~/.Xresources
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
+# Make sure we inherit all the variable settings for a login shell.
+v_8x68ecdh447ttdhftyrjcm442
+for v_8x68ecdh447ttdhftyrjcm442 in ~/.bash_profile ~/.profile /etc/profile
+do
+	if test -f "$v_8x68ecdh447ttdhftyrjcm442"
+	then
+		. "$v_8x68ecdh447ttdhftyrjcm442"
+		break
+	fi
+done
+
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log ~/.fluxbox/log
