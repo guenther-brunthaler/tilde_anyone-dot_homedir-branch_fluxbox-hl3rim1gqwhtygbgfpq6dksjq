@@ -1,5 +1,4 @@
-[begin]
-[encoding UTF-8]
+[begin][encoding UTF-8]
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopLeft}] (1/2 @ ←)
   [MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 TopRight}] (1/2 @ →)
   [submenu] (Andere Anordnung...)
@@ -15,21 +14,26 @@
     [end]
     [separator]
     [submenu] (↔ ...)
-      [ResizeTo 25% *] (1/4)
-      [ResizeTo 33% *] (1/3)
-      [ResizeTo 50% *] (1/2)
-      [ResizeTo 66% *] (2/3)
-      [ResizeTo 75% *] (3/4)
-      [ResizeTo 80% *] (4/5)
-      [ResizeTo 87% *] (7/8)
-      [ResizeTo 100% *] (1/1)
+      [ResizeTo 25% *] (1/4 = 25 %)
+      [ResizeTo 33% *] (1/3 = 33 %)
+      [ResizeTo 50% *] (1/2 = 50 %)
+      [ResizeTo 66% *] (2/3 = 66 %)
+      [ResizeTo 75% *] (3/4 = 75 %)
+      [ResizeTo 80% *] (4/5 = 80 %)
+      [ResizeTo 87% *] (7/8 = 87 %)
+      [ResizeTo 100% *] (1/1 = 100 %)
+      [ResizeTo 200% *] (2/1 = 200 %)
     [end]
     [submenu] (↕ ...)
-      [ResizeTo * 25%] (1/2)
-      [ResizeTo * 33%] (1/3)
-      [ResizeTo * 50%] (1/2)
-      [ResizeTo * 66%] (2/3)
-      [ResizeTo * 100%] (1/1)
+      [ResizeTo * 25% *] (1/4 = 25 %)
+      [ResizeTo * 33% *] (1/3 = 33 %)
+      [ResizeTo * 50% *] (1/2 = 50 %)
+      [ResizeTo * 66% *] (2/3 = 66 %)
+      [ResizeTo * 75% *] (3/4 = 75 %)
+      [ResizeTo * 80% *] (4/5 = 80 %)
+      [ResizeTo * 87% *] (7/8 = 87 %)
+      [ResizeTo * 100% *] (1/1 = 100 %)
+      [ResizeTo * 200% *] (2/1 = 200 %)
     [end]
     [separator]
     [submenu] (1/4 @ ...)
@@ -51,12 +55,13 @@
       [MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 BottomLeft}] (↓)
     [end]
     [separator]
-    [Resize -50% -50%] ((W÷2\)×(H÷2\))
-    [Resize +100% +100%] ((2×W\)×(2×H\))
+    [Resize -50% -50%] ((B÷2\)×(H÷2\))
+    [Resize +100% +100%] ((2×B\)×(2×H\))
   [end]
   [separator]
-  [maximize]
-  [iconify]
+  [iconify] (Minimieren: [Alt]+[F9])
+  [maximize] (Maximieren: [Alt]+[F10])
+  [fullscreen] (Vollbild: [Alt]+[F11])
   [separator]
   [stick]
   [sendto]
@@ -65,17 +70,14 @@
   [lower]
   [layer]
   [separator]
-  [shade]
-  [alpha]
   [extramenus]
   [submenu] (Weitere...)
     [ToggleDecor] (Fensterdekoration ein/aus)
     [settitledialog]
     [StartMoving] (Fenster verschieben)
-    [StartResizing] (Größe ändern (Kante\)) NearestEdge
+    [StartResizing NearestEdge 90%] (Größe ändern (Kante\))
     [Kill] (Brutal abwürgen)
   [end]
   [separator]
-  [close]
-  [endencoding]
-[end]
+  [close] (Schließen: [Alt]+[F4])
+[endencoding][end]

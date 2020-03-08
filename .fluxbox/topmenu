@@ -1,0 +1,28 @@
+[begin] (fluxbox)
+   [include] (~/.fluxbox/automenu)
+   [submenu] (Fluxbox)
+      [workspaces] (Arbeitsflächen)
+      [separator]
+      [exec] (Startmenü aktualisieren) {xdgmenumaker -f fluxbox -i -n > ~/.fluxbox/xdgmenumaker.menu && xmessage "Menus have been updated!" || xmessage "Problem updating menus!"}
+      [separator]
+      [exec] (Programm ausführen... [Alt]+[F2]) {command -v dmenu_run > /dev/null 2>& 1 && dmenu_run || fbrun}
+      [exec] (Fenstername...) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+      [separator]
+      [reconfig] (Konfiguration neu laden)
+      [restart] (Neustart Fenstermanager)
+      [exec] (Über...) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+      [separator]
+      [submenu] (System-Themen) {Choose a style...}
+         [stylesdir] (/usr/share/fluxbox/styles)
+      [end]
+      [submenu] (Benutzer-Themen) {Choose a style...}
+         [stylesdir] (~/.fluxbox/styles)
+      [end]
+      [config] (Konfiguration)
+      [commanddialog] (Fluxbox Kommando...)
+      [separator]
+      [exit] (Fluxbox-Sitzung beenden)
+   [end]
+   [separator]
+   [include] (~/.fluxbox/quicklaunch)
+[end]

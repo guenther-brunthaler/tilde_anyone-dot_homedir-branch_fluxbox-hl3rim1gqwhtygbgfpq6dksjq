@@ -1,13 +1,22 @@
-Copy $MYWALLPAPER.jpg to *this* directory then run
+Copy $MYWALLPAPER.jpg to *this* directory.
+
+Choose a wallpaper setter utility (which is installed) from the list displayed
+by the following command:
+
+$ echo && sed '/^case $WPSETTER in/,/^esac/!d;'`:\
+	`'s/^[[:space:]]*\([-_[:alnum:]]\{1,\}\))$/\1/; t; d' \
+	"`command -v fbsetbg`" | while read u; do \
+	command -v -- "$u" > /dev/null 2>& 1 && echo $u \
+	|| echo "$u (currently not installed)"; done
+
+Then run
 
 $ fbsetbg -u xv -f $MYWALLPAPER.jpg
+
+but use the wallpaper setter chosen rather than "xv" in that command.
 
 From now on
 
 $ fbsetbg -l
 
 will load that same wallpaper, and fluxbox will do that when it starts.
-
-Instead of "xv", a number of other wallpaper settings tools can be used as
-well. Look into the Perl source code of "fbsetbg" to see which ones are
-supported.
