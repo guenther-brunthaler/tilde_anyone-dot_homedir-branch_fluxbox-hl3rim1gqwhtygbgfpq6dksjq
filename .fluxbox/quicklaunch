@@ -1,34 +1,24 @@
-[exec] (PcManFM) {pcmanfm} </usr/share/icons/hicolor/16x16/apps/system-file-manager.png>
-[exec] (Krusader) {krusader} </usr/share/icons/hicolor/16x16/apps/krusader_user.png>
+[exec] (Kate) {kate -n } </usr/share/icons/oxygen/base/16x16/apps/kate.png>
+[exec] (Galculator) {galculator} </usr/share/icons/hicolor/48x48/apps/galculator.png>
 [separator]
-[exec] (LeafPad) {leafpad} </usr/share/icons/hicolor/16x16/apps/leafpad.png>
+[exec] (Mousepad) {mousepad } </usr/share/icons/hicolor/16x16/apps/org.xfce.mousepad.png>
 [exec] (Qalculate!) {qalculate-gtk} </usr/share/pixmaps/qalculate.png>
 [separator]
-[exec] (Locate files) {gnome-search-tool} </usr/share/icons/hicolor/16x16/apps/preferences-system-search.png>
-[exec] (Recoll) {recoll} </usr/share/icons/hicolor/48x48/apps/recoll.png>
-[exec] (Regexxer) {regexxer}
-[separator]
-[exec] (StarDict) {stardict}
-[separator]
-[exec] (Dillo) {dillo} </usr/share/icons/hicolor/16x16/apps/web-browser.png>
-[exec] (Thunderbird) {thunderbird} </usr/share/icons/hicolor/16x16/apps/thunderbird.png>
-[exec] (Firefox) {firefox} </usr/share/icons/hicolor/16x16/apps/firefox.png>
-[separator]
-[exec] (Stopwatch) {pystopwatch}
-[separator]
-[exec] (KeePassX) {keepassx} </usr/share/keepassx/icons/keepassx.png>
+[exec] (Dillo) {dillo -g 700x1002+290+26 file:/home/user/gb/Dokumente/Local%20Bookmarks.html} </usr/share/pixmaps/dillo.png>
 [exec] (GPG Clip) {~/prj/misc/gpg-clipboard-utility} <~/.local/share/icons/lockheart-66vqawws41ff2spi2sulrp0q5.png>
+[exec] (Thunderbird) {thunderbird} </usr/share/icons/hicolor/32x32/apps/thunderbird.png>
+[exec] (Firefox) {firefox} </usr/share/icons/hicolor/32x32/apps/firefox-esr.png>
+[exec] (VLC Player) {/usr/bin/vlc --started-from-file } </usr/share/icons/hicolor/16x16/apps/vlc.png>
 [separator]
-[exec] (Rectangles) {rect 135x65a} <~/.local/share/icons/rectangles-qe3e9c8kmiz6auiaky37i0j1k.png>
-[exec] (Kobo Deluxe) {kobodl} </usr/share/icons/hicolor/16x16/apps/kobodl.png>
-[exec] (XScavenger) {/usr/local/games/bin/xscavenger} <~/.local/share/icons/xscavenger-h2cjt1flsezadezt770r0mw8g.png>
-[exec] (Light Up) {lightup 86x44b45s0d0} <~/.local/share/icons/lightup-srxjygard7fhg2lckntmlfevv.png>
+[exec] (Recoll) {recoll} </usr/share/pixmaps/recoll.png>
+[exec] (Hilfe (lokal\)) {local_help_startpage} </usr/share/icons/oxygen/base/32x32/apps/help-browser.png>
+[exec] (SpaceFM) {spacefm } </usr/share/icons/hicolor/48x48/apps/spacefm.png>
+[exec] (KeePassX) {keepassx } </usr/share/icons/hicolor/16x16/apps/keepassx.png>
 [separator]
-[exec] (Xterm) {x-terminal-emulator -e "${SHELL:-sh\}" -l} </usr/share/icons/hicolor/16x16/apps/utilities-terminal.png>
-[exec] (Char Table) {gucharmap} </usr/share/icons/hicolor/16x16/apps/accessories-character-map.png>
-[exec] (Font Viewer) {gnome-font-viewer}
-[exec] (xkill) {xkill} <~/.local/share/icons/xkill-m74536-1-rcd00kri1xeprz3awfvhgub29.png>
+[exec] (XTerm) {xterm -name xterm80x46 -geometry 80x42+0+18 -e "${SHELL:-sh\}" -l} </usr/share/icons/Tango/16x16/apps/utilities-terminal.png>
+[exec] (Char Table) {gucharmap} </usr/share/icons/gnome/16x16/apps/accessories-character-map.png>
+[exec] (Xkill) {xkill} <~/.local/share/icons/xworld_f6ef71ljvwg1atyftitje6xu2-xkill.png>
 [separator]
-[exec] (Lock Screen) {sh -c 'xmessage -center -buttons OK:0,Cancel:1 -default OK "Activate screen lock?" && slock # xscreensaver-command -lock'} </usr/share/icons/hicolor/16x16/actions/system-lock-screen.png>
-[exec] (Xmag) {xmag} <~/.local/share/icons/xmag-68basbm3s3bi4dxmqd5cb84rs.png>
-[exec] (Task-Manager) {lxtask} </usr/share/icons/hicolor/16x16/apps/utilities-system-monitor.png>
+[exec] (Xmag) {xmag} <~/.local/share/icons/xworld_f6ef71ljvwg1atyftitje6xu2-xmag.png>
+[exec] (Taskmanager) {xfce4-taskmanager} </usr/share/icons/gnome/16x16/apps/utilities-system-monitor.png>
+[exec] (Lock Screen) {sh -c 'xmessage -center -buttons OK:0,Cancel:1 -default OK "Activate screen lock?" && { logger "locking screen"; slock; logger "unlocked screen"; \}'} </usr/share/icons/gnome/16x16/actions/system-lock-screen.png>

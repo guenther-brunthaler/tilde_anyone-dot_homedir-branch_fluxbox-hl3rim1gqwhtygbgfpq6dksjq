@@ -1,0 +1,16 @@
+FluxBox config problems
+=======================
+v2019.356
+
+Toolbar
+-------
+
+* If Double-RMB is user-defined, any user-defined RMB action is ignored and the native RMB-action (display toolbar config menu) is always used.
+
+* If RMB is user-defined, it also overrides the system tray RMB functionality, rendering about half of the existing systray apps unusable.
+
+* If the toolbar is given only a rather small width (say, for only displaying the clock), it will not be automatically enlarged once systray-applets appear which would require more space in the toolbar. Therefore one has make the toolbar larger than normal necessary if the systray has been enabled in the toolbar.
+
+* When the iconbar has been enabled but nothing is displayed on it, the clock will be right-aligned and any systemtray-icons will be added at the left. However, there will be an annoying vertical bar between the traybar plus clock and the unused space left of both. If the iconbar is disabled, the vertical bar is gone, but the clock is now left-aligned and all the unused space is right of it. Any traybar-icons will still be added left of the clock, making it float more to the right.
+
+* The only solution to eliminate all those problems seems to be disabling both the iconbar and the systemtray. This way the clock can always have the same width, and user-defined RMB actions cannot confuse the iconbar or traybar any more either.

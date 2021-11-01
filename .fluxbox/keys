@@ -1,45 +1,43 @@
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :RootMenu
-OnDesktop Mouse3 :WorkspaceMenu
-
-# scroll on the desktop to change workspaces
-OnDesktop Mouse4 :PrevWorkspace
-OnDesktop Mouse5 :NextWorkspace
+OnDesktop Mouse3 :HideMenus
+OnDesktop Double Mouse3 :ClientMenu (Workspace=[current])
+OnDesktop Mouse4 :HideMenus
 
 # scroll on the toolbar to change current window
 OnToolbar Mouse2 :RootMenu
-OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
-OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
+OnToolbar Mouse4 :PrevWindow {static groups} (Workspace=[current]) (iconhidden=no)
+OnToolbar Mouse5 :NextWindow {static groups} (Workspace=[current]) (iconhidden=no)
 
 # alt + left/right click to move/resize a window
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
-OnTitlebar Control Mouse3 :StartResizing NearestCorner
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
 # alt + middle click to lower the window
 OnWindow Mod1 Mouse2 :Lower
 
+OnTitlebar Move1 :StartMoving
+
 # control-click a window's titlebar and drag to attach windows
 OnTitlebar Control Mouse1 :StartTabbing
-#OnTitlebar Control Mouse3 :StartTabbing
-
-OnTitlebar Double Mouse1 :Minimize
 
 # left click on the titlebar to move the window
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
-OnTitlebar Move1  :StartMoving
-
-# middle click on the titlebar to lower
-#OnTitlebar Mouse2 :Lower
-OnTitlebar Mouse2 :RootMenu
 
 # right click on the titlebar for a menu of options
+OnTitlebar Double Mouse1 :Minimize
+
+OnTitlebar Mouse2 :RootMenu
+OnTitlebar Control Mouse3 :StartResizing NearestCornerOrEdge
 OnTitlebar Mouse3 :WindowMenu
+OnTitlebar Double Mouse3 :ClientMenu (Workspace=[current])
+OnTitlebar Mouse4 :If {Matches (Maximized=no)} {Maximize}
+OnTitlebar Mouse5 :If {Matches (Maximized=no)} {Minimize} {Maximize}
 
 # alt-tab
 Mod1 Tab :NextWindow {groups} (Workspace=[current]) (Minimized=no)
@@ -51,50 +49,43 @@ Mod4 Shift Tab :PrevTab
 
 # open a terminal
 Mod1 F1 :Exec x-terminal-emulator
-Mod4 F1 :Exec x-terminal-emulator
 
 # open a dialog to run programs
-Mod1 F2 :Exec fbrun
-Mod4 F2 :Exec fbrun
+Mod1 F2 :Exec command -v dmenu_run > /dev/null 2>& 1 && dmenu_run || fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset PCM,0 1+
 174 :Exec amixer sset PCM,0 1-
+XF86AudioLowerVolume :Exec amixer sset PCM,0 1-
+176 :Exec amixer sset PCM,0 1+
+XF86AudioRaiseVolume :Exec amixer sset PCM,0 1+
 160 :Exec amixer sset PCM,0 toggle
+XF86AudioMute :Exec amixer sset PCM,0 toggle
 
 # "Scroll Lock" toggles backlight on some keyboards
 Scroll_Lock :Exec keyboard-backlight-toggle-via-scroll_lock_led
 
 # current window commands
 Mod1 F4 :Close
-Mod1 F5 :Kill
 Mod1 F9 :Minimize
 Mod1 F10 :Maximize
 Mod1 F11 :Fullscreen
+Mod1 F12 :ToggleDecor
 
 # open the window menu
 Mod1 space :WindowMenu
-
 Control Escape :RootMenu
-Mod4 Escape :RootMenu
-
-# exit fluxbox
-Control Mod1 Delete :Exit
-
-# change to previous/next workspace
-Control Mod1 Left :PrevWorkspace
-Control Mod1 Right :NextWorkspace
 
 # Application shortcuts
-Control Mod1 q :Exec qalculate-gtk
+Control Mod1 q :Exec galculator
 Control Mod1 w :Exec dillo
-Control Mod1 m :Exec thunderbird --mail
-Control Mod1 n :Exec thunderbird --compose
-Control Mod1 e :Exec leafpad
-Control Mod1 f :Exec pcmanfm
-#Control Mod1 l :Exec mate-search-tool
+XF86Mail :Exec thunderbird
+XF86HomePage :Exec dillo
+Control Mod1 e :Exec mousepad
+Control Mod1 f :Exec spacefm
 Shift Print :Exec screenshot-takeit
 Print :Exec screenshot-takeit --current
-Control Mod1 t :Exec lxtask
+Control Mod1 t :Exec xfce4-taskmanager
 Control Mod1 d :Exec recoll
+XF86Search :Exec recoll
+XF86Tools :Exec /usr/bin/vlc --started-from-file
