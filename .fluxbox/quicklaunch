@@ -4,7 +4,7 @@
 [exec] (Mousepad) {mousepad } </usr/share/icons/hicolor/16x16/apps/org.xfce.mousepad.png>
 [exec] (Qalculate!) {qalculate-gtk} </usr/share/pixmaps/qalculate.png>
 [separator]
-[exec] (Dillo) {dillo -g 700x1002+290+26 file:/home/user/gb/Dokumente/Local%20Bookmarks.html} </usr/share/pixmaps/dillo.png>
+[exec] (Dillo) {dillo -g 700x1002+290+26} </usr/share/pixmaps/dillo.png>
 [exec] (GPG Clip) {~/prj/misc/gpg-clipboard-utility} <~/.local/share/icons/lockheart-66vqawws41ff2spi2sulrp0q5.png>
 [exec] (Thunderbird) {thunderbird} </usr/share/icons/hicolor/32x32/apps/thunderbird.png>
 [exec] (Firefox) {firefox} </usr/share/icons/hicolor/32x32/apps/firefox-esr.png>
