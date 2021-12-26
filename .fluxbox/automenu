@@ -1,3 +1,3 @@
-[submenu] (Start)
+[submenu] (Start) </usr/share/icons/gnome/256x256/places/start-here.png>
    [include] (~/.fluxbox/xdgmenumaker.menu)
 [end]

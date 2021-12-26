@@ -13,7 +13,8 @@
 [exec] (Recoll) {recoll} </usr/share/pixmaps/recoll.png>
 [exec] (Hilfe (lokal\)) {local_help_startpage} </usr/share/icons/oxygen/base/32x32/apps/help-browser.png>
 [exec] (SpaceFM) {spacefm } </usr/share/icons/hicolor/48x48/apps/spacefm.png>
-[exec] (KeePassX) {keepassx } </usr/share/icons/hicolor/16x16/apps/keepassx.png>
+[exec] (Krusader) {krusader  } </usr/share/icons/hicolor/16x16/apps/krusader_user.png>
+[exec] (KeePassXC) {keepassxc } </usr/share/icons/hicolor/256x256/apps/keepassxc.png>
 [separator]
 [exec] (XTerm) {xterm -name xterm80x46 -geometry 80x42+0+18 -e "${SHELL:-sh\}" -l} </usr/share/icons/Tango/16x16/apps/utilities-terminal.png>
 [exec] (Char Table) {gucharmap} </usr/share/icons/gnome/16x16/apps/accessories-character-map.png>
