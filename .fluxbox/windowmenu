@@ -28,24 +28,32 @@
     [MoveTo * 0 Bottom] (unten)
     [separator]
     [submenu] (Breite ...)
-      [ResizeHorizontal -50%] (÷2)
-      [ResizeHorizontal +50%] (×2)
-      [separator]
       [ResizeTo 25% *] (1/4 = 25 %)
       [ResizeTo 33% *] (1/3 = 33 %)
       [ResizeTo 50% *] (1/2 = 50 %)
       [ResizeTo 75% *] (3/4 = 75 %)
       [ResizeTo 100% *] (1/1 = 100 %)
+      [separator]
+      [ResizeHorizontal -50%] (÷ 2)
+      [ResizeHorizontal +100%] (× 2)
+      [ResizeHorizontal -25%] (− 1/3)
+      [ResizeHorizontal +33%] (+ 1/3)
+      [ResizeHorizontal -9%] (− 1/10)
+      [ResizeHorizontal +10%] (+ 1/10)
     [end]
     [submenu] (Höhe ...)
-      [ResizeVertical -50%] (÷2)
-      [ResizeVertical +50%] (×2)
-      [separator]
       [ResizeTo * 25% *] (1/4 = 25 %)
       [ResizeTo * 33% *] (1/3 = 33 %)
       [ResizeTo * 50% *] (1/2 = 50 %)
       [ResizeTo * 75% *] (3/4 = 75 %)
       [ResizeTo * 100% *] (1/1 = 100 %)
+      [separator]
+      [ResizeVertical -50%] (÷ 2)
+      [ResizeVertical +100%] (× 2)
+      [ResizeVertical -25%] (− 1/3)
+      [ResizeVertical +33%] (+ 1/3)
+      [ResizeVertical -9%] (− 1/10)
+      [ResizeVertical +10%] (+ 1/10)
     [end]
   [end]
   [separator]
