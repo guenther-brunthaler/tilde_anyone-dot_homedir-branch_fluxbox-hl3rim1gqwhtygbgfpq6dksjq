@@ -55,6 +55,7 @@
       [ResizeVertical -9%] (− 1/10)
       [ResizeVertical +10%] (+ 1/10)
     [end]
+    [MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 100% 100%}] (100 % breit+hoch)
   [end]
   [separator]
   [iconify] (Minimieren: [Alt]+[F9])
